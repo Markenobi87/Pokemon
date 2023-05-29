@@ -1,0 +1,123 @@
+
+  
+*{ font-family: chakra petch, Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;                     }
+
+
+ol {list-style: none;}
+
+
+body{
+    background-image: url(assets/bgxl.png);}
+    
+.container{
+
+    margin:1px 80px;
+}
+
+.logo_logo{width: 25rem;
+
+}
+
+.logo{
+    display: flex;
+  justify-content: center;
+   }
+
+ 
+   .titulo{
+   
+    margin-top: 100px;
+   
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    color: #00428A;
+ }
+
+.form{
+   display: flex;
+   justify-content: center;
+}
+
+.input-text{
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: #4C65A9 solid;
+    box-shadow: 0px 0px 4px;
+
+}
+.input-btn{
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-weight: 800;
+background-color: #FFCB00;
+border:#00428A solid;
+box-shadow:rgb(119, 221, 241) 2px 2px 5px;
+cursor: pointer;
+
+
+
+    
+}
+
+#pokedex{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 2%;
+   }
+
+.box{
+   border-radius: 25px;
+   border: none;
+   padding-top: 4rem ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 3rem;
+
+}
+li{
+    box-shadow: 1px 2px 7px;
+    font-family: chakra petch;
+     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    
+ }
+
+li:hover{
+   scale: 110%;
+   box-shadow: rgb(50, 131, 237) 2px 4px 9px ;
+}
+
+img{
+ width: 150px;
+}
+
+
+li h1{
+    font-size: x-large;
+}
+
+@media (max-width :820px){
+    #pokedex{
+        grid-template-columns: repeat(2,250px);
+        margin: 20px 40px;
+    }
+}
+
+
+@media (min-width :576) {
+    #pokedex {
+        grid-template-columns: repeat(1,250px);
+      
+
+}}
